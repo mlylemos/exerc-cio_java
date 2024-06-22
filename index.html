@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Validação</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>FORMULÁRIO DE VALIDAÇÃO</h1>
+        <h3>Preencha os campos, sendo o campo B maior que o campo A</h3> <br>
+        <p>Digite apenas números</p>
+        <form id="formulario">
+            <input type="number" id="campoA" required placeholder="Campo A" />
+            <input   type="number" id="campoB" required placeholder="Campo B" />
+            <p class="error-message">
+                Formulário inválido: Campo B deve ser maior que Campo A.
+            </p>
+            <button type="submit" id="botao">Enviar formulário</button>
+        </form>
+        <p class="success-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
